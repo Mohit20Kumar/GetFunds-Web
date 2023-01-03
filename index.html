@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./index.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="./index.js" type="module"></script>
+        <title>FUND COLLECTOR</title>
+    </head>
+    <body>
+        <div class="main font-mono">
+            <h1 class="p-5 w-full text-center text-[5rem] font-bold">
+                FUND COLLECTOR
+            </h1>
+            <div class="flex justify-center">
+                <div class="flex justify-center items-center">
+                    <button
+                        id="connectBtn"
+                        type="button"
+                        class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-bold text-lg rounded-lg px-5 py-3 text-center mr-2 mb-2"
+                    >
+                        CONNECT TO METAMASK
+                    </button>
+                </div>
+                <div class="flex justify-center items-center">
+                    <button
+                        id="balBtn"
+                        type="button"
+                        class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-bold text-lg rounded-lg px-5 py-3 text-center mr-2 mb-2"
+                    >
+                        GET BALANCE
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex justify-center items-center p-5">
+                <!-- Form -->
+                <div class="relative z-0 mr-4 mt-6 mb-6 group">
+                    <input
+                        type="text"
+                        name="ethAmount"
+                        id="ethAmount"
+                        class="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        placeholder=" "
+                        required
+                    />
+                    <label
+                        for="ethAmount"
+                        class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        >Eth Amount</label
+                    >
+                </div>
+                <button
+                    id="fundBtn"
+                    type="button"
+                    class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-bold text-lg rounded-lg px-5 py-3 text-center mr-2 mb-2"
+                >
+                    FUND
+                </button>
+            </div>
+            <div class="flex justify-center items-center">
+                <button
+                    id="withdrawBtn"
+                    type="button"
+                    class="w-[20rem] text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-bold text-lg rounded-lg px-5 py-3 text-center mr-2 mb-2"
+                >
+                    WITHDRAW FUNDS
+                </button>
+            </div>
+        </div>
+    </body>
+</html>
